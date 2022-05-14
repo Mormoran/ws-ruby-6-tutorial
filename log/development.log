@@ -650,3 +650,33 @@ Processing by MicropostsController#index as HTML
 Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.2ms | Allocations: 4957)
 
 
+Started GET "/microposts/1/edit" for ::1 at 2022-05-14 17:03:11 +0100
+Processing by MicropostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/microposts_controller.rb:67:in `set_micropost'
+  [1m[36mMicropost Load (0.6ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:67:in `set_micropost'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/edit.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 2.0ms | Allocations: 825)
+  Rendered microposts/edit.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1085)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 4695)
+Completed 200 OK in 47ms (Views: 22.7ms | ActiveRecord: 0.9ms | Allocations: 8943)
+
+
+Started PATCH "/microposts/1" for ::1 at 2022-05-14 17:03:23 +0100
+Processing by MicropostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"First micropost! osjdbflaskjbdflajkbflsakdjbgliadfkjgbsdlifgkjbsdilfgjk.bnsidlfgjkbdslifkgjbsfildgjkbsdlfigjkbdfslgjkbsdflgkjbsfdlkjgbaldfkjgbakjfdgblsifkdjgblizkjgbslidfkjgbilsfdkjgbvlisdkfjbnvilkd.jfbglka.jdsbvilsdk.fjbvnliksd.jfbnvilakd.jfbgnilsjkfd.bnvliskjfdbnlisjkfdbnlk.jdbfnliskj.fdbnliskj.dfzbnvlksjfdbgnlisekjfbnvlisekjfbnvlisk.ejfdbnvliskf.jgn", "user_id"=>"1"}, "commit"=>"Update Micropost", "id"=>"1"}
+  [1m[36mMicropost Load (0.1ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:67:in `set_micropost'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/edit.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (Duration: 3.5ms | Allocations: 1860)
+  Rendered microposts/edit.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1993)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 5551)
+Completed 200 OK in 15ms (Views: 11.3ms | ActiveRecord: 0.1ms | Allocations: 7476)
+
+
