@@ -1,25 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Heroku URL: [https://ws-ruby-6-tutorial.herokuapp.com/](https://ws-ruby-6-tutorial.herokuapp.com/)
 
-Things you may want to cover:
+Covered:
 
-* Ruby version
+* How to add routes pointing to methods
 
-* System dependencies
+* How to scaffold
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* How to add relations
 # ws-ruby-6-tutorial
